@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Moin Rehan | Full-Stack MERN Developer</title>
+<meta name="description" content="Portfolio of Md Moin Rehan, a Full-Stack MERN developer, WordPress developer and UI/UX designer from Kolkata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a href="#home" class="logo">&lt;<span>Rehan</span> /&gt;</a>
+    <nav id="menu">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-outline nav-cv" href="/api/cv/download">↓ Download CV</a>
+    <button id="burger" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <span class="float f1">{ }</span><span class="float f2">&lt;/&gt;</span><span class="float f3">()=&gt;</span><span class="float f4">;</span>
+    <div class="container hero-grid">
+      <div>
+        <p class="mono eyebrow">// hi, i'm</p>
+        <h1><span id="first-name">Md Moin</span> <span class="accent" id="last-name">Rehan</span></h1>
+        <p class="mono role">&gt; <span id="role-text"></span><span class="caret"></span></p>
+        <p class="lead" id="hero-intro"></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#projects">View My Projects →</a>
+          <a class="btn btn-outline" href="/api/cv/download">↓ Download CV</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
+        </div>
+        <div class="socials mono" id="socials"></div>
+      </div>
+
+      <div class="editor-wrap">
+        <span class="chip c1">Node.js</span><span class="chip c2">React</span><span class="chip c3">MongoDB</span>
+        <div class="editor">
+          <div class="bar"><i class="d1"></i><i class="d2"></i><i class="d3"></i><span class="tab mono">developer.js</span></div>
+          <div class="code-body mono">
+            <div class="gutter" id="gutter"></div>
+            <pre id="code" aria-label="Animated code snippet"></pre>
+          </div>
+          <div class="status mono" id="status"><span>✓ compiled successfully</span><span>JavaScript · UTF-8</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <p class="label mono">// about_me</p>
+        <h2>Crafting digital <span class="accent">experiences</span></h2>
+        <div id="about-text"></div>
+        <div class="stats" id="stats"></div>
+      </div>
+      <div class="card journey reveal">
+        <h3 class="mono">my_journey</h3>
+        <div id="journey"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="alt">
+    <div class="container">
+      <div class="reveal"><p class="label mono">// skills</p><h2>Technologies I <span class="accent">work with</span></h2></div>
+      <div class="skills-grid" id="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="reveal"><p class="label mono">// projects</p><h2>Featured <span class="accent">projects</span></h2>
+      <p class="muted section-sub">Real full-stack applications with secure authentication, clean architecture and responsive interfaces.</p></div>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="alt">
+    <div class="container">
+      <div class="reveal"><p class="label mono">// experience</p><h2>Experience, education &amp; <span class="accent">certificates</span></h2></div>
+      <div class="exp-grid">
+        <div class="card reveal"><h3 class="mono">work_experience</h3><div id="experience-list"></div></div>
+        <div class="card reveal"><h3 class="mono">education</h3><div id="education-list"></div></div>
+        <div class="card reveal"><h3 class="mono">certifications</h3><div id="cert-list"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal"><p class="label mono">// contact</p><h2>Let's build something <span class="accent">great</span></h2>
+      <p class="muted section-sub">Open to full-stack, WordPress and UI/UX opportunities. Send a message and I'll get back to you.</p></div>
+      <div class="contact-grid">
+        <div class="contact-info reveal" id="contact-info"></div>
+        <form class="card reveal" id="contact-form" novalidate>
+          <div class="row">
+            <label>Name<input name="name" type="text" required maxlength="60" placeholder="Your name"></label>
+            <label>Email<input name="email" type="email" required placeholder="you@example.com"></label>
+          </div>
+          <label>Subject<input name="subject" type="text" maxlength="100" placeholder="What is this about?"></label>
+          <label>Message<textarea name="message" rows="5" required minlength="10" maxlength="1000" placeholder="Tell me about your project..."></textarea></label>
+          <button class="btn btn-primary" type="submit" id="send-btn">Send Message →</button>
+          <p class="form-msg mono" id="form-msg"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <span class="logo">&lt;<span>Rehan</span> /&gt;</span>
+    <span class="muted">© <span id="year">2026</span> Md Moin Rehan. All rights reserved.</span>
+    <a href="#home" class="btn btn-outline top" aria-label="Back to top">↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
