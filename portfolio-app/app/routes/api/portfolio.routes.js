@@ -3,6 +3,9 @@ const rateLimit = require("express-rate-limit");
 const portfolioController = require("../../controller/api/portfolio.controller");
 const validate = require("../../middleware/validate");
 const { contactSchema } = require("../../validation/contact.validation");
+const app = express();
+
+app.set("trust proxy", 1);
 
 const router = express.Router();
 
