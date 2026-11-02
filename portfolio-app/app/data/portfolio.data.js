@@ -27,6 +27,7 @@ module.exports = {
   journey: [
     { date: "2026 – Present", title: "Full-Stack Developer", text: "Building MERN stack applications at Web Skitters Academy." },
     { date: "Nov 2024 – Apr 2025", title: "UI Designer Intern", text: "Ogma IT Conceptions Pvt. Ltd." },
+    { date: "May 2025 – Present", title: "UI & Backend Developer", text: "Topsia Website Designs" },
     { date: "2022 – Present", title: "B.Com Student", text: "Naba Ballygunge Mahavidyalaya, 3rd year." },
   ],
 
@@ -100,6 +101,12 @@ module.exports = {
       place: "Ogma IT Conceptions Pvt. Ltd.",
       date: "Nov 2024 – Apr 2025",
       text: "During this period, he was found hard working, consistent, honest and diligent in his assigned duties and responsibilities.",
+    },
+    {
+      title: "UI & Backend Developer",
+      place: "Topsia Website Designs",
+      date: "May 2025 – Present",
+      text: "Responsible for designing and developing user interfaces and backend systems for various web applications.",
     },
   ],
 
