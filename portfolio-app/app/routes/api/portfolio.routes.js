@@ -3,16 +3,14 @@ const rateLimit = require("express-rate-limit");
 const portfolioController = require("../../controller/api/portfolio.controller");
 const validate = require("../../middleware/validate");
 const { contactSchema } = require("../../validation/contact.validation");
-const app = express();
 
-app.set("trust proxy", 1);
 
 const router = express.Router();
 
-// max 5 messages per 15 minutes from one IP
+// max 10 messages per 15 minutes from one IP
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 5,
+  max: 10,
   message: { status: false, message: "Too many messages, please try again later" },
 });
 
